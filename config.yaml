@@ -1,0 +1,27 @@
+#服务端口
+server:
+ port: 8888
+ mode: debug # debug test release  服务器模式
+
+#数据库
+mysql:
+ host: 127.0.0.1
+ port: 3306
+ user: root
+ password: root
+ dbname: _official_site
+ charset: utf8mb4
+ max-idle-conns: 10
+ max-open-conns: 100
+ show: true
+
+#日志
+zap:
+  level: info
+  format: console #输出格式
+  prefix: "[logger:]"
+  director: log #存放日志文件夹
+  show-line: true #显示行
+  encode-level: LowercaseColorLevelEncoder #彩色编码
+  stacktrace-key: stacktrace #堆栈信息
+  log-in-console: true 
